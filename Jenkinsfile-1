@@ -2,9 +2,7 @@
 pipeline {
   agent { 
     dockerfile true
-    node {
-            label 'docker-agent'
-        }
+    label 'docker-agent'
   }
   stages {
     stage('Test') {
